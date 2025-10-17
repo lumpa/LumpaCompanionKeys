@@ -1,1 +1,1 @@
-![alt text](https://github.com/lumpa/LumpaCompanionKeys/raw/master/src/common/images/icon48.png "test")
+![alt text](https://github.com/lumpa/LumpaCompanionKeys/blob/master/img0.png "Example")
