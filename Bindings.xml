@@ -1,0 +1,218 @@
+<!-- <Bindings>
+    <Binding name="Spread" header="LCK">
+        LumpaCompanionKeys_spread()
+    </Binding>
+</Bindings>
+ -->
+
+ <Bindings>
+    <Binding name="LUMPACOMPANIONKEYS_START" header="LCK">
+        LumpaCompanionKeys_start()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_STOP">
+        LumpaCompanionKeys_stop()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PAUSE">
+        LumpaCompanionKeys_pause()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE">
+        LumpaCompanionKeys_unpause()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_AOE">
+        LumpaCompanionKeys_aoe()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_COME">
+        LumpaCompanionKeys_come()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_STAY">
+        LumpaCompanionKeys_stay()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_COMESTAY">
+        LumpaCompanionKeys_comestay()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_MOVE">
+        LumpaCompanionKeys_move()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_FOLLOW">
+        LumpaCompanionKeys_follow()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_UNFOLLOW">
+        LumpaCompanionKeys_unfollow()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_USE">
+        LumpaCompanionKeys_use()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_SPREAD">
+        LumpaCompanionKeys_spread()
+    </Binding>
+
+    <!-- Pause role -->
+    <Binding name="LUMPACOMPANIONKEYS_PAUSE_TANK">
+        LumpaCompanionKeys_pause_tank()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PAUSE_HEALER">
+        LumpaCompanionKeys_pause_healer()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PAUSE_DPS">
+        LumpaCompanionKeys_pause_dps()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PAUSE_RDPS">
+        LumpaCompanionKeys_pause_rdps()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PAUSE_MDPS">
+        LumpaCompanionKeys_pause_mdps()
+    </Binding>
+
+    <!-- Pause NOT role -->
+    <Binding name="LUMPACOMPANIONKEYS_PAUSE_NOT_TANK">
+        LumpaCompanionKeys_pause_not_tank()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PAUSE_NOT_HEALER">
+        LumpaCompanionKeys_pause_not_healer()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PAUSE_NOT_DPS">
+        LumpaCompanionKeys_pause_not_dps()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PAUSE_NOT_RDPS">
+        LumpaCompanionKeys_pause_not_rdps()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PAUSE_NOT_MDPS">
+        LumpaCompanionKeys_pause_not_mdps()
+    </Binding>
+
+    <!-- Unpause role -->
+    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_TANK">
+        LumpaCompanionKeys_unpause_tank()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_HEALER">
+        LumpaCompanionKeys_unpause_healer()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_DPS">
+        LumpaCompanionKeys_unpause_dps()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_RDPS">
+        LumpaCompanionKeys_unpause_rdps()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_MDPS">
+        LumpaCompanionKeys_unpause_mdps()
+    </Binding>
+
+    <!-- Unpause NOT role -->
+    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_NOT_TANK">
+        LumpaCompanionKeys_unpause_not_tank()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_NOT_HEALER">
+        LumpaCompanionKeys_unpause_not_healer()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_NOT_DPS">
+        LumpaCompanionKeys_unpause_not_dps()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_NOT_RDPS">
+        LumpaCompanionKeys_unpause_not_rdps()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_NOT_MDPS">
+        LumpaCompanionKeys_unpause_not_mdps()
+    </Binding>
+
+    <!-- Pull -->
+    <Binding name="LUMPACOMPANIONKEYS_PULL_1">
+        LumpaCompanionKeys_pull_1()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PULL_3">
+        LumpaCompanionKeys_pull_3()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PULL_5">
+        LumpaCompanionKeys_pull_5()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PULL_10">
+        LumpaCompanionKeys_pull_10()
+    </Binding>
+
+    <!-- Pull Back -->
+    <Binding name="LUMPACOMPANIONKEYS_PULL_BACK_1">
+        LumpaCompanionKeys_pull_back_1()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PULL_BACK_3">
+        LumpaCompanionKeys_pull_back_3()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PULL_BACK_5">
+        LumpaCompanionKeys_pull_back_5()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_PULL_BACK_10">
+        LumpaCompanionKeys_pull_back_10()
+    </Binding>
+
+    <!-- Set role -->
+    <Binding name="LUMPACOMPANIONKEYS_SET_TANK">
+        LumpaCompanionKeys_set_tank()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_SET_HEALER">
+        LumpaCompanionKeys_set_healer()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_SET_DPS">
+        LumpaCompanionKeys_set_dps()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_SET_RDPS">
+        LumpaCompanionKeys_set_rdps()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_SET_MDPS">
+        LumpaCompanionKeys_set_mdps()
+    </Binding>
+
+    <!-- Focus mark -->
+    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_SKULL">
+        LumpaCompanionKeys_focusmark_skull()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_CROSS">
+        LumpaCompanionKeys_focusmark_cross()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_CIRCLE">
+        LumpaCompanionKeys_focusmark_circle()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_STAR">
+        LumpaCompanionKeys_focusmark_star()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_SQUARE">
+        LumpaCompanionKeys_focusmark_square()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_TRIANGLE">
+        LumpaCompanionKeys_focusmark_triangle()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_DIAMOND">
+        LumpaCompanionKeys_focusmark_diamond()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_MOON">
+        LumpaCompanionKeys_focusmark_moon()
+    </Binding>
+
+    <!-- CC mark -->
+    <Binding name="LUMPACOMPANIONKEYS_CCMARK_SKULL">
+        LumpaCompanionKeys_ccmark_skull()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_CCMARK_CROSS">
+        LumpaCompanionKeys_ccmark_cross()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_CCMARK_CIRCLE">
+        LumpaCompanionKeys_ccmark_circle()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_CCMARK_STAR">
+        LumpaCompanionKeys_ccmark_star()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_CCMARK_SQUARE">
+        LumpaCompanionKeys_ccmark_square()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_CCMARK_TRIANGLE">
+        LumpaCompanionKeys_ccmark_triangle()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_CCMARK_DIAMOND">
+        LumpaCompanionKeys_ccmark_diamond()
+    </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_CCMARK_MOON">
+        LumpaCompanionKeys_ccmark_moon()
+    </Binding>
+
+    <!-- Toggle -->
+    <Binding name="LUMPACOMPANIONKEYS_TOGGLE_AOE">
+        LumpaCompanionKeys_toggle_aoe()
+    </Binding>
+</Bindings>

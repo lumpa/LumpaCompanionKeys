@@ -1,0 +1,8 @@
+## Interface: 11200
+## Title: Lumpa Companion Keys
+## Notes: Keybinds for most basic companion commands
+## Author: Lumpa
+## Version: 1.0
+
+LumpaCompanionKeys.lua
+Bindings.xml
