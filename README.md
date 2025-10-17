@@ -1,4 +1,4 @@
-Keybinds to perform various .z commands (http://microbot.wikidot.com/zcommands) for Nyctermoon.
+Keybinds to perform various .z commands (http://microbot.wikidot.com/zcommands) for Nyctermoon / Microbot wow 1.12.
 
 Escape -> Key Bindings -> Scroll down to LumpaCompanionKeys
 
