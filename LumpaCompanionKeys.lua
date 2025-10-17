@@ -84,6 +84,7 @@ BINDING_NAME_LUMPACOMPANIONKEYS_CCMARK_MOON = "CC Mark: Moon"
 
 -- Toggle
 BINDING_NAME_LUMPACOMPANIONKEYS_TOGGLE_AOE = "Toggle AOE"
+BINDING_NAME_LUMPACOMPANIONKEYS_COMETOGGLE = "Toggle come"
 
 -- SLASH_LCK1 = "/lck"
 -- SlashCmdList["LCK"] = function(msg)
@@ -437,6 +438,11 @@ end
 -- TOGGLE AOE
 function LumpaCompanionKeys_toggle_aoe()
     SendChatMessage(".z toggle aoe", "PARTY")
+end
+
+-- COME TOGGLE
+function LumpaCompanionKeys_cometoggle()
+    SendChatMessage(".z cometoggle", "PARTY")
 end
 
 -- USE

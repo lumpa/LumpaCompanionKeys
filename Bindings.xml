@@ -215,4 +215,7 @@
     <Binding name="LUMPACOMPANIONKEYS_TOGGLE_AOE">
         LumpaCompanionKeys_toggle_aoe()
     </Binding>
+    <Binding name="LUMPACOMPANIONKEYS_COMETOGGLE">
+        LumpaCompanionKeys_cometoggle()
+    </Binding>
 </Bindings>
