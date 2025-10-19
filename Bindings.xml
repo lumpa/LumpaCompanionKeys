@@ -41,6 +41,9 @@
     <Binding name=".z use">
         LCK_Command(".z use")
     </Binding>
+    <Binding name=".z spread">
+        LCK_Command(".z spread")
+    </Binding>
 
 
     <!-- start -->

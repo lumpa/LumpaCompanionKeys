@@ -4,3 +4,9 @@ BINDING_HEADER_LCK_ADVANCED = "LumpaCompanionKeys - Advanced"
 function LCK_Command(cmd)
     SendChatMessage(cmd, "PARTY")
 end
+
+function ClearTargetIfFriendly()
+    if UnitExists("target") and UnitIsFriend("player", "target") then
+        ClearTarget()
+    end
+end
