@@ -1,221 +1,476 @@
-<!-- <Bindings>
-    <Binding name="Spread" header="LCK">
-        LumpaCompanionKeys_spread()
-    </Binding>
-</Bindings>
- -->
-
  <Bindings>
-    <Binding name="LUMPACOMPANIONKEYS_START" header="LCK">
-        LumpaCompanionKeys_start()
+    <Binding name=".z start" header="LCK_BASIC">
+        LCK_Command(".z start")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_STOP">
-        LumpaCompanionKeys_stop()
+    <Binding name=".z stop">
+        LCK_Command(".z stop")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PAUSE">
-        LumpaCompanionKeys_pause()
+    <Binding name=".z pause">
+        LCK_Command(".z pause")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE">
-        LumpaCompanionKeys_unpause()
+    <Binding name=".z unpause">
+        LCK_Command(".z unpause")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_AOE">
-        LumpaCompanionKeys_aoe()
+    <Binding name=".z pull">
+        LCK_Command(".z pull")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_COME">
-        LumpaCompanionKeys_come()
+    <Binding name=".z pull back">
+        LCK_Command(".z pull back")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_STAY">
-        LumpaCompanionKeys_stay()
+    <Binding name=".z aoe">
+        LCK_Command(".z aoe")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_COMESTAY">
-        LumpaCompanionKeys_comestay()
+    <Binding name=".z come">
+        LCK_Command(".z come")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_MOVE">
-        LumpaCompanionKeys_move()
+    <Binding name=".z stay">
+        LCK_Command(".z stay")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_FOLLOW">
-        LumpaCompanionKeys_follow()
+    <Binding name=".z comestay">
+        LCK_Command(".z comestay")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_UNFOLLOW">
-        LumpaCompanionKeys_unfollow()
+    <Binding name=".z move">
+        LCK_Command(".z move")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_USE">
-        LumpaCompanionKeys_use()
+    <Binding name=".z follow">
+        LCK_Command(".z follow")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_SPREAD">
-        LumpaCompanionKeys_spread()
+    <Binding name=".z unfollow">
+        LCK_Command(".z unfollow")
     </Binding>
-
-    <!-- Pause role -->
-    <Binding name="LUMPACOMPANIONKEYS_PAUSE_TANK">
-        LumpaCompanionKeys_pause_tank()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PAUSE_HEALER">
-        LumpaCompanionKeys_pause_healer()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PAUSE_DPS">
-        LumpaCompanionKeys_pause_dps()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PAUSE_RDPS">
-        LumpaCompanionKeys_pause_rdps()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PAUSE_MDPS">
-        LumpaCompanionKeys_pause_mdps()
+    <Binding name=".z use">
+        LCK_Command(".z use")
     </Binding>
 
-    <!-- Pause NOT role -->
-    <Binding name="LUMPACOMPANIONKEYS_PAUSE_NOT_TANK">
-        LumpaCompanionKeys_pause_not_tank()
+
+    <!-- start -->
+    <Binding name=".z start tank" header="LCK_ADVANCED">
+        LCK_Command(".z start tank")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PAUSE_NOT_HEALER">
-        LumpaCompanionKeys_pause_not_healer()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PAUSE_NOT_DPS">
-        LumpaCompanionKeys_pause_not_dps()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PAUSE_NOT_RDPS">
-        LumpaCompanionKeys_pause_not_rdps()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PAUSE_NOT_MDPS">
-        LumpaCompanionKeys_pause_not_mdps()
+    <Binding name=".z start tank not">
+        LCK_Command(".z start tank not")
     </Binding>
 
-    <!-- Unpause role -->
-    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_TANK">
-        LumpaCompanionKeys_unpause_tank()
+    <Binding name=".z start healer">
+        LCK_Command(".z start healer")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_HEALER">
-        LumpaCompanionKeys_unpause_healer()
+    <Binding name=".z start healer not">
+        LCK_Command(".z start healer not")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_DPS">
-        LumpaCompanionKeys_unpause_dps()
+    
+    <Binding name=".z start dps">
+        LCK_Command(".z start dps")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_RDPS">
-        LumpaCompanionKeys_unpause_rdps()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_MDPS">
-        LumpaCompanionKeys_unpause_mdps()
+    <Binding name=".z start dps not">
+        LCK_Command(".z start dps not")
     </Binding>
 
-    <!-- Unpause NOT role -->
-    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_NOT_TANK">
-        LumpaCompanionKeys_unpause_not_tank()
+    <Binding name=".z start rdps">
+        LCK_Command(".z start rdps")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_NOT_HEALER">
-        LumpaCompanionKeys_unpause_not_healer()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_NOT_DPS">
-        LumpaCompanionKeys_unpause_not_dps()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_NOT_RDPS">
-        LumpaCompanionKeys_unpause_not_rdps()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_UNPAUSE_NOT_MDPS">
-        LumpaCompanionKeys_unpause_not_mdps()
+    <Binding name=".z start rdps not">
+        LCK_Command(".z start rdps not")
     </Binding>
 
-    <!-- Pull -->
-    <Binding name="LUMPACOMPANIONKEYS_PULL_1">
-        LumpaCompanionKeys_pull_1()
+    <Binding name=".z start mdps">
+        LCK_Command(".z start mdps")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PULL_3">
-        LumpaCompanionKeys_pull_3()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PULL_5">
-        LumpaCompanionKeys_pull_5()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PULL_10">
-        LumpaCompanionKeys_pull_10()
+    <Binding name=".z start mdps not">
+        LCK_Command(".z start mdps not")
     </Binding>
 
-    <!-- Pull Back -->
-    <Binding name="LUMPACOMPANIONKEYS_PULL_BACK_1">
-        LumpaCompanionKeys_pull_back_1()
+
+
+    <!-- stop -->
+    <Binding name=".z stop tank">
+        LCK_Command(".z stop tank")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PULL_BACK_3">
-        LumpaCompanionKeys_pull_back_3()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PULL_BACK_5">
-        LumpaCompanionKeys_pull_back_5()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_PULL_BACK_10">
-        LumpaCompanionKeys_pull_back_10()
+    <Binding name=".z stop tank not">
+        LCK_Command(".z stop tank not")
     </Binding>
 
-    <!-- Set role -->
-    <Binding name="LUMPACOMPANIONKEYS_SET_TANK">
-        LumpaCompanionKeys_set_tank()
+    <Binding name=".z stop healer">
+        LCK_Command(".z stop healer")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_SET_HEALER">
-        LumpaCompanionKeys_set_healer()
+    <Binding name=".z stop healer not">
+        LCK_Command(".z stop healer not")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_SET_DPS">
-        LumpaCompanionKeys_set_dps()
+    
+    <Binding name=".z stop dps">
+        LCK_Command(".z stop dps")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_SET_RDPS">
-        LumpaCompanionKeys_set_rdps()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_SET_MDPS">
-        LumpaCompanionKeys_set_mdps()
+    <Binding name=".z stop dps not">
+        LCK_Command(".z stop dps not")
     </Binding>
 
-    <!-- Focus mark -->
-    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_SKULL">
-        LumpaCompanionKeys_focusmark_skull()
+    <Binding name=".z stop rdps">
+        LCK_Command(".z stop rdps")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_CROSS">
-        LumpaCompanionKeys_focusmark_cross()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_CIRCLE">
-        LumpaCompanionKeys_focusmark_circle()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_STAR">
-        LumpaCompanionKeys_focusmark_star()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_SQUARE">
-        LumpaCompanionKeys_focusmark_square()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_TRIANGLE">
-        LumpaCompanionKeys_focusmark_triangle()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_DIAMOND">
-        LumpaCompanionKeys_focusmark_diamond()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_FOCUSMARK_MOON">
-        LumpaCompanionKeys_focusmark_moon()
+    <Binding name=".z stop rdps not">
+        LCK_Command(".z stop rdps not")
     </Binding>
 
-    <!-- CC mark -->
-    <Binding name="LUMPACOMPANIONKEYS_CCMARK_SKULL">
-        LumpaCompanionKeys_ccmark_skull()
+    <Binding name=".z stop mdps">
+        LCK_Command(".z stop mdps")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_CCMARK_CROSS">
-        LumpaCompanionKeys_ccmark_cross()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_CCMARK_CIRCLE">
-        LumpaCompanionKeys_ccmark_circle()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_CCMARK_STAR">
-        LumpaCompanionKeys_ccmark_star()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_CCMARK_SQUARE">
-        LumpaCompanionKeys_ccmark_square()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_CCMARK_TRIANGLE">
-        LumpaCompanionKeys_ccmark_triangle()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_CCMARK_DIAMOND">
-        LumpaCompanionKeys_ccmark_diamond()
-    </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_CCMARK_MOON">
-        LumpaCompanionKeys_ccmark_moon()
+    <Binding name=".z stop mdps not">
+        LCK_Command(".z stop mdps not")
     </Binding>
 
-    <!-- Toggle -->
-    <Binding name="LUMPACOMPANIONKEYS_TOGGLE_AOE">
-        LumpaCompanionKeys_toggle_aoe()
+
+
+    <!-- pause -->
+    <Binding name=".z pause tank">
+        LCK_Command(".z pause tank")
     </Binding>
-    <Binding name="LUMPACOMPANIONKEYS_COMETOGGLE">
-        LumpaCompanionKeys_cometoggle()
+    <Binding name=".z pause tank not">
+        LCK_Command(".z pause tank not")
     </Binding>
+
+    <Binding name=".z pause healer">
+        LCK_Command(".z pause healer")
+    </Binding>
+    <Binding name=".z pause healer not">
+        LCK_Command(".z pause healer not")
+    </Binding>
+    
+    <Binding name=".z pause dps">
+        LCK_Command(".z pause dps")
+    </Binding>
+    <Binding name=".z pause dps not">
+        LCK_Command(".z pause dps not")
+    </Binding>
+
+    <Binding name=".z pause rdps">
+        LCK_Command(".z pause rdps")
+    </Binding>
+    <Binding name=".z pause rdps not">
+        LCK_Command(".z pause rdps not")
+    </Binding>
+
+    <Binding name=".z pause mdps">
+        LCK_Command(".z pause mdps")
+    </Binding>
+    <Binding name=".z pause mdps not">
+        LCK_Command(".z pause mdps not")
+    </Binding>
+
+
+
+    <!-- unpause -->
+    <Binding name=".z unpause tank">
+        LCK_Command(".z unpause tank")
+    </Binding>
+    <Binding name=".z unpause tank not">
+        LCK_Command(".z unpause tank not")
+    </Binding>
+
+    <Binding name=".z unpause healer">
+        LCK_Command(".z unpause healer")
+    </Binding>
+    <Binding name=".z unpause healer not">
+        LCK_Command(".z unpause healer not")
+    </Binding>
+    
+    <Binding name=".z unpause dps">
+        LCK_Command(".z unpause dps")
+    </Binding>
+    <Binding name=".z unpause dps not">
+        LCK_Command(".z unpause dps not")
+    </Binding>
+
+    <Binding name=".z unpause rdps">
+        LCK_Command(".z unpause rdps")
+    </Binding>
+    <Binding name=".z unpause rdps not">
+        LCK_Command(".z unpause rdps not")
+    </Binding>
+
+    <Binding name=".z unpause mdps">
+        LCK_Command(".z unpause mdps")
+    </Binding>
+    <Binding name=".z unpause mdps not">
+        LCK_Command(".z unpause mdps not")
+    </Binding>
+
+
+
+    <!-- pull -->
+    <Binding name=".z pull 1">
+        LCK_Command(".z pull 1")
+    </Binding>
+    <Binding name=".z pull 3">
+        LCK_Command(".z pull 1")
+    </Binding>
+    <Binding name=".z pull 5">
+        LCK_Command(".z pull 1")
+    </Binding>
+
+
+
+    <!-- pull back -->
+    <Binding name=".z pull back 1">
+        LCK_Command(".z pull 1")
+    </Binding>
+    <Binding name=".z pull back 3">
+        LCK_Command(".z pull 3")
+    </Binding>
+    <Binding name=".z pull back 5">
+        LCK_Command(".z pull 5")
+    </Binding>
+
+
+
+    <!-- come -->
+    <Binding name=".z come tank">
+        LCK_Command(".z come tank")
+    </Binding>
+    <Binding name=".z come tank not">
+        LCK_Command(".z come tank not")
+    </Binding>
+
+    <Binding name=".z come healer">
+        LCK_Command(".z come healer")
+    </Binding>
+    <Binding name=".z come healer not">
+        LCK_Command(".z come healer not")
+    </Binding>
+    
+    <Binding name=".z come dps">
+        LCK_Command(".z come dps")
+    </Binding>
+    <Binding name=".z come dps not">
+        LCK_Command(".z come dps not")
+    </Binding>
+
+    <Binding name=".z come rdps">
+        LCK_Command(".z come rdps")
+    </Binding>
+    <Binding name=".z come rdps not">
+        LCK_Command(".z come rdps not")
+    </Binding>
+
+    <Binding name=".z come mdps">
+        LCK_Command(".z come mdps")
+    </Binding>
+    <Binding name=".z come mdps not">
+        LCK_Command(".z come mdps not")
+    </Binding>
+
+
+
+    <!-- stay -->
+    <Binding name=".z stay tank">
+        LCK_Command(".z stay tank")
+    </Binding>
+    <Binding name=".z stay tank not">
+        LCK_Command(".z stay tank not")
+    </Binding>
+
+    <Binding name=".z stay healer">
+        LCK_Command(".z stay healer")
+    </Binding>
+    <Binding name=".z stay healer not">
+        LCK_Command(".z stay healer not")
+    </Binding>
+    
+    <Binding name=".z stay dps">
+        LCK_Command(".z stay dps")
+    </Binding>
+    <Binding name=".z stay dps not">
+        LCK_Command(".z stay dps not")
+    </Binding>
+
+    <Binding name=".z stay rdps">
+        LCK_Command(".z stay rdps")
+    </Binding>
+    <Binding name=".z stay rdps not">
+        LCK_Command(".z stay rdps not")
+    </Binding>
+
+    <Binding name=".z stay mdps">
+        LCK_Command(".z stay mdps")
+    </Binding>
+    <Binding name=".z stay mdps not">
+        LCK_Command(".z stay mdps not")
+    </Binding>
+
+
+
+    <!-- comestay -->
+    <Binding name=".z comestay tank">
+        LCK_Command(".z comestay tank")
+    </Binding>
+    <Binding name=".z comestay tank not">
+        LCK_Command(".z comestay tank not")
+    </Binding>
+
+    <Binding name=".z comestay healer">
+        LCK_Command(".z comestay healer")
+    </Binding>
+    <Binding name=".z comestay healer not">
+        LCK_Command(".z comestay healer not")
+    </Binding>
+    
+    <Binding name=".z comestay dps">
+        LCK_Command(".z comestay dps")
+    </Binding>
+    <Binding name=".z comestay dps not">
+        LCK_Command(".z comestay dps not")
+    </Binding>
+
+    <Binding name=".z comestay rdps">
+        LCK_Command(".z comestay rdps")
+    </Binding>
+    <Binding name=".z comestay rdps not">
+        LCK_Command(".z comestay rdps not")
+    </Binding>
+
+    <Binding name=".z comestay mdps">
+        LCK_Command(".z comestay mdps")
+    </Binding>
+    <Binding name=".z comestay mdps not">
+        LCK_Command(".z comestay mdps not")
+    </Binding>
+
+
+
+    <!-- move -->
+    <Binding name=".z move tank">
+        LCK_Command(".z move tank")
+    </Binding>
+    <Binding name=".z move tank not">
+        LCK_Command(".z move tank not")
+    </Binding>
+
+    <Binding name=".z move healer">
+        LCK_Command(".z move healer")
+    </Binding>
+    <Binding name=".z move healer not">
+        LCK_Command(".z move healer not")
+    </Binding>
+    
+    <Binding name=".z move dps">
+        LCK_Command(".z move dps")
+    </Binding>
+    <Binding name=".z move dps not">
+        LCK_Command(".z move dps not")
+    </Binding>
+
+    <Binding name=".z move rdps">
+        LCK_Command(".z move rdps")
+    </Binding>
+    <Binding name=".z move rdps not">
+        LCK_Command(".z move rdps not")
+    </Binding>
+
+    <Binding name=".z move mdps">
+        LCK_Command(".z move mdps")
+    </Binding>
+    <Binding name=".z move mdps not">
+        LCK_Command(".z move mdps not")
+    </Binding>
+
+
+
+    <!-- set -->
+    <Binding name=".z set tank">
+        LCK_Command(".z set tank")
+    </Binding>
+    <Binding name=".z set healer">
+        LCK_Command(".z set healer")
+    </Binding>
+    <Binding name=".z set dps">
+        LCK_Command(".z set dps")
+    </Binding>
+    <Binding name=".z set rdps">
+        LCK_Command(".z set rdps")
+    </Binding>
+    <Binding name=".z set mdps">
+        LCK_Command(".z set mdps")
+    </Binding>
+
+
+
+    <!-- focus -->
+    <Binding name=".z focus skull">
+        LCK_Command(".z focus skull")
+    </Binding>
+    <Binding name=".z focus cross">
+        LCK_Command(".z focus cross")
+    </Binding>
+    <Binding name=".z focus circle">
+        LCK_Command(".z focus circle")
+    </Binding>
+    <Binding name=".z focus star">
+        LCK_Command(".z focus star")
+    </Binding>
+    <Binding name=".z focus square">
+        LCK_Command(".z focus square")
+    </Binding>
+    <Binding name=".z focus triangle">
+        LCK_Command(".z focus triangle")
+    </Binding>
+    <Binding name=".z focus diamond">
+        LCK_Command(".z focus diamond")
+    </Binding>
+    <Binding name=".z focus moon">
+        LCK_Command(".z focus moon")
+    </Binding>
+
+
+
+    <!-- cc -->
+    <Binding name=".z cc skull">
+        LCK_Command(".z cc skull")
+    </Binding>
+    <Binding name=".z cc cross">
+        LCK_Command(".z cc cross")
+    </Binding>
+    <Binding name=".z cc circle">
+        LCK_Command(".z cc circle")
+    </Binding>
+    <Binding name=".z cc star">
+        LCK_Command(".z cc star")
+    </Binding>
+    <Binding name=".z cc square">
+        LCK_Command(".z cc square")
+    </Binding>
+    <Binding name=".z cc triangle">
+        LCK_Command(".z cc triangle")
+    </Binding>
+    <Binding name=".z cc diamond">
+        LCK_Command(".z cc diamond")
+    </Binding>
+    <Binding name=".z cc moon">
+        LCK_Command(".z cc moon")
+    </Binding>
+
+
+
+    <!-- clear -->
+    <Binding name=".z clear">
+        LCK_Command(".z clear")
+    </Binding>
+    <Binding name=".z clear ccmark">
+        LCK_Command(".z clear ccmark")
+    </Binding>
+    <Binding name=".z clear focusmark">
+        LCK_Command(".z clear focusmark")
+    </Binding>
+
+
+
+    <!-- who -->
+    <Binding name=".z who">
+        LCK_Command(".z who")
+    </Binding>
+    <Binding name=".z who users">
+        LCK_Command(".z who users")
+    </Binding>
+    <Binding name=".z who details">
+        LCK_Command(".z who details")
+    </Binding>
+
+
 </Bindings>
