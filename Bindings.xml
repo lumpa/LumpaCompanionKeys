@@ -213,13 +213,13 @@
 
     <!-- pull back -->
     <Binding name=".z pull back 1">
-        LCK_Command(".z pull 1")
+        LCK_Command(".z pull back 1")
     </Binding>
     <Binding name=".z pull back 3">
-        LCK_Command(".z pull 3")
+        LCK_Command(".z pull back 3")
     </Binding>
     <Binding name=".z pull back 5">
-        LCK_Command(".z pull 5")
+        LCK_Command(".z pull back 5")
     </Binding>
 
 
