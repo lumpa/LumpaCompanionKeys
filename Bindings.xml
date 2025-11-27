@@ -203,10 +203,10 @@
         LCK_Command(".z pull 1")
     </Binding>
     <Binding name=".z pull 3">
-        LCK_Command(".z pull 1")
+        LCK_Command(".z pull 3")
     </Binding>
     <Binding name=".z pull 5">
-        LCK_Command(".z pull 1")
+        LCK_Command(".z pull 5")
     </Binding>
 
 
@@ -473,6 +473,13 @@
     </Binding>
     <Binding name=".z who details">
         LCK_Command(".z who details")
+    </Binding>
+
+
+
+    <!-- transfer -->
+    <Binding name=".z transfer">
+        LCK_Command(".z transfer")
     </Binding>
 
 
