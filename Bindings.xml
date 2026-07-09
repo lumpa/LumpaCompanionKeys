@@ -20,6 +20,9 @@
     <Binding name=".z aoe">
         LCK_Command(".z aoe")
     </Binding>
+    <Binding name=".z toggle aoe">
+        LCK_Command(".z toggle aoe")
+    </Binding>
     <Binding name=".z come">
         LCK_Command(".z come")
     </Binding>
@@ -43,6 +46,12 @@
     </Binding>
     <Binding name=".z spread">
         LCK_Command(".z spread")
+    </Binding>
+    <Binding name=".z spread sides">
+        LCK_Command(".z spread sides")
+    </Binding>
+    <Binding name=".z spread back">
+        LCK_Command(".z spread back")
     </Binding>
 
 
@@ -81,7 +90,6 @@
     <Binding name=".z start mdps not">
         LCK_Command(".z start mdps not")
     </Binding>
-
 
 
     <!-- stop -->
@@ -481,6 +489,76 @@
     <Binding name=".z transfer">
         LCK_Command(".z transfer")
     </Binding>
+
+
+    <!-- custom -->
+    <Binding name=".z start rdps+healer" header="LCK_CUSTOM">
+        LCK_Command(".z start rdps")
+        LCK_Command(".z start healer")
+    </Binding>
+    <Binding name=".z stop rdps+healer">
+        LCK_Command(".z stop rdps")
+        LCK_Command(".z stop healer")
+    </Binding>
+    <Binding name=".z pause rdps+healer">
+        LCK_Command(".z pause rdps")
+        LCK_Command(".z pause healer")
+    </Binding>
+    <Binding name=".z unpause rdps+healer">
+        LCK_Command(".z unpause rdps")
+        LCK_Command(".z unpause healer")
+    </Binding>
+    <Binding name=".z come rdps+healer">
+        LCK_Command(".z come rdps")
+        LCK_Command(".z come healer")
+    </Binding>
+    <Binding name=".z stay rdps+healer">
+        LCK_Command(".z stay rdps")
+        LCK_Command(".z stay healer")
+    </Binding>
+    <Binding name=".z comestay rdps+healer">
+        LCK_Command(".z comestay rdps")
+        LCK_Command(".z comestay healer")
+    </Binding>
+    <Binding name=".z move rdps+healer">
+        LCK_Command(".z move rdps")
+        LCK_Command(".z move healer")
+    </Binding>
+
+
+    <Binding name=".z start tank+mdps">
+        LCK_Command(".z start tank")
+        LCK_Command(".z start mdps")
+    </Binding>
+    <Binding name=".z stop tank+mdps">
+        LCK_Command(".z stop tank")
+        LCK_Command(".z stop mdps")
+    </Binding>
+    <Binding name=".z pause tank+mdps">
+        LCK_Command(".z pause tank")
+        LCK_Command(".z pause mdps")
+    </Binding>
+    <Binding name=".z unpause tank+mdps">
+        LCK_Command(".z unpause tank")
+        LCK_Command(".z unpause mdps")
+    </Binding>
+    <Binding name=".z come tank+mdps">
+        LCK_Command(".z come tank")
+        LCK_Command(".z come mdps")
+    </Binding>
+    <Binding name=".z stay tank+mdps">
+        LCK_Command(".z stay tank")
+        LCK_Command(".z stay mdps")
+    </Binding>
+    <Binding name=".z comestay tank+mdps">
+        LCK_Command(".z comestay tank")
+        LCK_Command(".z comestay mdps")
+    </Binding>
+    <Binding name=".z move tank+mdps">
+        LCK_Command(".z move tank")
+        LCK_Command(".z move mdps")
+    </Binding>
+
 
 
 </Bindings>
