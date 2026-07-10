@@ -2,13 +2,14 @@ BINDING_HEADER_LCK_BASIC = "LumpaCompanionKeys - Basic"
 BINDING_HEADER_LCK_ADVANCED = "LumpaCompanionKeys - Advanced"
 BINDING_HEADER_LCK_CUSTOM = "LumpaCompanionKeys - Custom"
 
+local PLAYER_NAME = UnitName("player")
+
 local BUTTON_TOP_OFFSET = 16
 local BUTTON_LEFT_PADDING = 8
 local RIGHT_PADDING = 8
 local BOTTOM_PADDING = 8
 local SECTION_GAP = 8
 local ICON_ZOOM = 0.08
-
 
 
 
@@ -92,6 +93,9 @@ function LCK_Command(cmd)
 end
 function LCK_WhisperCommand(commands, classes)
 	local function SendCommands(name)
+		if not name then return end
+		if name == PLAYER_NAME then return end
+
 		if type(commands) == "table" then
 			for _, cmd in ipairs(commands) do SendChatMessage(cmd, "WHISPER", nil, name) end
 		else
@@ -433,13 +437,15 @@ CreateLCKButton("utility", "LCKAmplifyMagic_Allow",     "Interface\\Icons\\Spell
 CreateLCKButton("utility", "LCKAmplifyMagic_Deny",      "Interface\\Icons\\Spell_shadow_sacrificialshield",       2, 1, {"MAGE"}, "deny add Amplify Magic")
 CreateLCKButton("utility", "LCKDampenMagic_Allow",      "Interface\\Icons\\spell_nature_abolishmagic",            3, 0, {"MAGE"}, "deny remove Dampen Magic")
 CreateLCKButton("utility", "LCKDampenMagic_Deny",       "Interface\\Icons\\Spell_shadow_sacrificialshield",       3, 1, {"MAGE"}, "deny add Dampen Magic")
+CreateLCKButton("utility", "LCKReincarnation_Allow",    "Interface\\Icons\\spell_nature_reincarnation",           4, 0, {"SHAMAN"}, "deny remove Reincarnation")
+CreateLCKButton("utility", "LCKReincarnation_Deny",     "Interface\\Icons\\Spell_shadow_sacrificialshield",       4, 1, {"SHAMAN"}, "deny add Reincarnation")
 
 -- SET GEAR
-CreateLCKButton("gear", "LCKGear_Normal",               "Interface\\Icons\\inv_shield_04",       0, 0, {}, "set gear normal")
-CreateLCKButton("gear", "LCKGear_Fire",                 "Interface\\Icons\\spell_fire_fireball",       1, 0, {}, "set gear fire")
-CreateLCKButton("gear", "LCKGear_Nature",               "Interface\\Icons\\spell_nature_protectionformnature",       2, 0, {}, "set gear nature")
-CreateLCKButton("gear", "LCKGear_Frost",                "Interface\\Icons\\spell_frost_frostarmor02",       3, 0, {}, "set gear frost")
-CreateLCKButton("gear", "LCKGear_Shadow",               "Interface\\Icons\\spell_holy_prayerofshadowprotection",       4, 0, {}, "set gear shadow")
+CreateLCKButton("gear", "LCKGear_Normal",               "Interface\\Icons\\inv_shield_04",                        0, 0, nil, "set gear normal")
+CreateLCKButton("gear", "LCKGear_Fire",                 "Interface\\Icons\\spell_fire_fireball",                  1, 0, nil, "set gear fire")
+CreateLCKButton("gear", "LCKGear_Nature",               "Interface\\Icons\\spell_nature_protectionformnature",    2, 0, nil, "set gear nature")
+CreateLCKButton("gear", "LCKGear_Frost",                "Interface\\Icons\\spell_frost_frostarmor02",             3, 0, nil, "set gear frost")
+CreateLCKButton("gear", "LCKGear_Shadow",               "Interface\\Icons\\spell_holy_prayerofshadowprotection",  4, 0, nil, "set gear shadow")
 
 
 
