@@ -1,5 +1,5 @@
 ## Interface: 11200
-## Title: Lumpa Companion Keys
+## Title: LumpaCompanionKeys
 ## Notes: Keybinds for most basic companion commands
 ## Author: Lumpa
 ## Version: 1.0

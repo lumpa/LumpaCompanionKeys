@@ -316,6 +316,11 @@ local function CreateLCKButton(sectionName, name, texture, col, row, classes, co
 	icon:SetTexCoord(ICON_ZOOM, 1-ICON_ZOOM, ICON_ZOOM, 1-ICON_ZOOM)
 	icon:SetAllPoints(btn)
 
+	local highlight = btn:CreateTexture(nil, "HIGHLIGHT")
+	highlight:SetTexture("Interface\\Buttons\\ButtonHilight-Square")
+	highlight:SetBlendMode("ADD")
+	highlight:SetAllPoints(btn)
+
 	btn:SetScript("OnClick", function()
 		LCK_WhisperCommand(command, classes)
 	end)
@@ -405,26 +410,34 @@ CreateLCKButton("aura", "LCKAuraShadowResistance",      "Interface\\Icons\\Spell
 CreateLCKButton("aura", "LCKAuraFrostResistance",       "Interface\\Icons\\Spell_Frost_WizardMark",               4, 0, {"PALADIN"}, "cast Frost Resistance Aura")
 CreateLCKButton("aura", "LCKAuraFireResistance",        "Interface\\Icons\\Spell_Fire_SealOfFire",                5, 0, {"PALADIN"}, "cast Fire Resistance Aura")
 
--- SHAMAN TOTEMS
+-- SHAMAN TOTEMS: earth
 CreateLCKButton("totem", "LCKTotemStrengthOfEarth",     "Interface\\Icons\\Spell_Nature_EarthBindTotem",          0, 0, {"SHAMAN"}, {"cast Strength of Earth Totem", "set totem Strength of Earth Totem"})
 CreateLCKButton("totem", "LCKTotemStoneskin",           "Interface\\Icons\\Spell_Nature_StoneSkinTotem",          1, 0, {"SHAMAN"}, {"cast Stoneskin Totem", "set totem Stoneskin Totem"})
 CreateLCKButton("totem", "LCKTotemEarthbind",           "Interface\\Icons\\Spell_Nature_StrengthOfEarthTotem02",  2, 0, {"SHAMAN"}, {"cast Earthbind Totem", "set totem Earthbind Totem"})
 CreateLCKButton("totem", "LCKTotemTremor",              "Interface\\Icons\\Spell_Nature_TremorTotem",             3, 0, {"SHAMAN"}, {"cast Tremor Totem", "set totem Tremor Totem"})
+CreateLCKButton("totem", "LCKTotemStoneclaw",           "Interface\\Icons\\spell_nature_stoneclawtotem",          4, 0, {"SHAMAN"}, {"cast Stoneclaw Totem", "set totem Stoneclaw Totem"})
 
+-- SHAMAN TOTEMS: fire
 CreateLCKButton("totem", "LCKTotemSearing",             "Interface\\Icons\\spell_fire_searingTotem",              0, 1, {"SHAMAN"}, {"cast Searing Totem", "set totem Searing Totem"})
 CreateLCKButton("totem", "LCKTotemMagma",               "Interface\\Icons\\Spell_Fire_SelfDestruct",              1, 1, {"SHAMAN"}, {"cast Magma Totem", "set totem Magma Totem"})
 CreateLCKButton("totem", "LCKTotemFlametongue",         "Interface\\Icons\\Spell_Nature_GuardianWard",            2, 1, {"SHAMAN"}, {"cast Flametongue Totem", "set totem Flametongue Totem"})
-CreateLCKButton("totem", "LCKTotemFireResistance",      "Interface\\Icons\\Spell_FireResistanceTotem_01",         3, 1, {"SHAMAN"}, {"cast Fire Resistance Totem", "set totem Fire Resistance Totem"})
+CreateLCKButton("totem", "LCKTotemFireNova",            "Interface\\Icons\\spell_fire_sealoffire",                3, 1, {"SHAMAN"}, {"cast Fire Nova Totem", "set totem Fire Nova Totem"})
+CreateLCKButton("totem", "LCKTotemFrostResistance",     "Interface\\Icons\\spell_frostresistancetotem_01",        4, 1, {"SHAMAN"}, {"cast Frost Resistance Totem", "set totem Frost Resistance Totem"})
 
+-- SHAMAN TOTEMS: water
 CreateLCKButton("totem", "LCKTotemHealingStream",       "Interface\\Icons\\INV_Spear_04",                         0, 2, {"SHAMAN"}, {"cast Healing Stream Totem", "set totem Healing Stream Totem"})
 CreateLCKButton("totem", "LCKTotemManaSpring",          "Interface\\Icons\\Spell_Nature_ManaRegenTotem",          1, 2, {"SHAMAN"}, {"cast Mana Spring Totem", "set totem Mana Spring Totem"})
 CreateLCKButton("totem", "LCKTotemPoisonCleansing",     "Interface\\Icons\\Spell_Nature_NullifyPoison",           2, 2, {"SHAMAN"}, {"cast Poison Cleansing Totem", "set totem Poison Cleansing Totem"})
 CreateLCKButton("totem", "LCKTotemDiseaseCleansing",    "Interface\\Icons\\Spell_Nature_RemoveDisease",           3, 2, {"SHAMAN"}, {"cast Disease Cleansing Totem", "set totem Disease Cleansing Totem"})
+CreateLCKButton("totem", "LCKTotemFireResistance",      "Interface\\Icons\\Spell_FireResistanceTotem_01",         4, 2, {"SHAMAN"}, {"cast Fire Resistance Totem", "set totem Fire Resistance Totem"})
 
+-- SHAMAN TOTEMS: air
 CreateLCKButton("totem", "LCKTotemWindfury",            "Interface\\Icons\\Spell_Nature_Cyclone",                 0, 3, {"SHAMAN"}, {"cast Windfury Totem", "set totem Windfury Totem"})
 CreateLCKButton("totem", "LCKTotemGraceOfAir",          "Interface\\Icons\\Spell_Nature_InvisibilityTotem",       1, 3, {"SHAMAN"}, {"cast Grace of Air Totem", "set totem Grace of Air Totem"})
-CreateLCKButton("totem", "LCKTotemGrounding",           "Interface\\Icons\\Spell_Nature_GroundingTotem",          2, 3, {"SHAMAN"}, {"cast Grounding Totem", "set totem Grounding Totem"})
-CreateLCKButton("totem", "LCKTotemNatureResistance",    "Interface\\Icons\\Spell_Nature_NatureResistanceTotem",   3, 3, {"SHAMAN"}, {"cast Nature Resistance Totem", "set totem Nature Resistance Totem"})
+CreateLCKButton("totem", "LCKTotemTranquilAir",         "Interface\\Icons\\spell_nature_brilliance",              2, 3, {"SHAMAN"}, {"cast Tranquil Air Totem", "set totem Tranquil Air Totem"})
+CreateLCKButton("totem", "LCKTotemGrounding",           "Interface\\Icons\\Spell_Nature_GroundingTotem",          3, 3, {"SHAMAN"}, {"cast Grounding Totem", "set totem Grounding Totem"})
+CreateLCKButton("totem", "LCKTotemNatureResistance",    "Interface\\Icons\\Spell_Nature_NatureResistanceTotem",   4, 3, {"SHAMAN"}, {"cast Nature Resistance Totem", "set totem Nature Resistance Totem"})
+CreateLCKButton("totem", "LCKTotemWindwall",            "Interface\\Icons\\spell_nature_earthbind",               5, 3, {"SHAMAN"}, {"cast Windwall Totem", "set totem Windwall Totem"})
 
 -- PETS
 CreateLCKButton("utility", "LCKPetOn",                  "Interface\\Icons\\Ability_Hunter_BeastCall",             0, 0, {"HUNTER", "WARLOCK"}, "set pet on")
